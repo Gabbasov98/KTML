@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+</head>
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body class="m-page">
+
+    <div class="wrapper" style="padding: 50px;">
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+        <a href="404.html" style="display: block; margin-bottom: 20px;">
+            404
+        </a>
+
+
+
+
+        <button data-modal="reqModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Оставить заявку
+        </button>
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="modal" id="reqModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="h1 text-center">
+                Оставить заявку
+            </div>
+            <form action="" class="modal-form">
+                <div class="fg _error">
+                    <label>
+                        Номер телефона
+                    </label>
+                    <input type="tel">
+                    <div class="fg__error-text">
+                        Error
+                    </div>
+                </div>
+                <div class="fg">
+                    <label>
+                        E-mail
+                    </label>
+                    <input type="email">
+                </div>
+                <div class="fg">
+                    <label>
+                        ФИО
+                    </label>
+                    <input type="text">
+                </div>
+                <div class="fg">
+                    <label>
+                        Организация
+                    </label>
+                    <input type="text">
+                </div>
+                <div class="fg _full">
+                    <label>
+                        Ваше сообщение (необязательно)
+                    </label>
+                    <textarea></textarea>
+                    <div class="fg__hint">
+                        Необязательно к заполнению
+                    </div>
+                </div>
+                <div class="modal-form__nav _full">
+                    <button class="modal-form__btn m-btn m-btn-primary">
+                        <span>Отправить</span>
+                    </button>
+                </div>
+                <div class="modal-form__hint">
+                    <div class="text20 text16-tablet">
+                        Все поля, кроме сообщения обязательны к заполнению
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--  -->
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
